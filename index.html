@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOSSRUST LLC — Vintage Iron Crafts & Home Decor</title>
+    <meta name="description" content="Hand-forged iron crafts, hammered vases, flower pots, and artisan home goods by MOSSRUST LLC.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='80'%3E%F0%9F%8F%BA%3C/text%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- CRT Scanline Overlay -->
+<div class="crt-overlay"></div>
+
+<!-- ===== Marquee Ticker ===== -->
+<div class="marquee-bar">
+    <div class="marquee-track">
+        <span>✦ Free US Shipping on Orders Over $75</span>
+        <span>✦ Hand-Forged in Fujian, Shipped from the US</span>
+        <span>✦ New Collection Dropping Summer 2026</span>
+        <span>✦ Each Piece Hand-Inspected Before Shipping</span>
+        <span>✦ Free US Shipping on Orders Over $75</span>
+        <span>✦ Hand-Forged in Fujian, Shipped from the US</span>
+        <span>✦ New Collection Dropping Summer 2026</span>
+        <span>✦ Each Piece Hand-Inspected Before Shipping</span>
+    </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="header">
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#categories">Shop</a>
+        <a href="#collection">Catalog</a>
+        <a href="#story">About</a>
+    </nav>
+    <button class="cart-toggle" aria-label="Shopping Cart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-count">0</span>
+    </button>
+</header>
+
+<!-- ===== Cart Drawer ===== -->
+<div class="cart-overlay"></div>
+<aside class="cart-drawer">
+    <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button class="cart-close" aria-label="Close Cart">&times;</button>
+    </div>
+    <div class="cart-body">
+        <p class="cart-empty">Your cart is empty.</p>
+    </div>
+    <div class="cart-footer" style="display:none">
+        <div class="cart-total">
+            <span>Subtotal</span>
+            <span class="cart-total-price">$0.00</span>
+        </div>
+        <p class="cart-shipping">Free US shipping on orders over $75</p>
+        <button class="cart-checkout-btn">Checkout</button>
+    </div>
+</aside>
+
+<!-- ===== Hero ===== -->
+<section id="home" class="hero">
+    <div class="hero-row">
+        <div class="hero-logo-col">
+            <img src="images/logo.png" alt="MOSSRUST LLC" class="hero-logo">
+        </div>
+        <div class="hero-content-col">
+            <h1>Where Nature<br>Meets Craft</h1>
+            <p class="hero-subtitle">Hand-forged iron &amp; copper vessels, shaped by fire, hammer, and time. Each piece bears the marks of its maker.</p>
+            <a href="#collection" class="hero-cta">» Explore The Collection</a>
+        </div>
+    </div>
+    <div class="hero-stats">
+        <div class="stat-item">
+            <span class="stat-number" data-target="200">0</span>
+            <span class="stat-label">Unique Pieces</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" data-target="15">0</span>
+            <span class="stat-label">States Shipped</span>
+        </div>
+        <div class="stat-item">
+            <span class="stat-number" data-target="98">0</span>
+            <span class="stat-label">% Happy</span>
+        </div>
+    </div>
+</section>
+
+<!-- ===== Category Cards ===== -->
+<section id="categories" class="categories-section section">
+    <div class="section-header">
+        <h2 class="section-title">Browse by Category</h2>
+        <div class="decorative-divider"></div>
+    </div>
+    <div class="category-grid">
+        <a href="#collection" class="category-card">
+            <div class="category-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Iron Pots</h3>
+            <p>Hand-hammered planters &amp; urns</p>
+        </a>
+        <a href="#collection" class="category-card">
+            <div class="category-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            </div>
+            <h3>Vases</h3>
+            <p>Copper, patina &amp; ceramic</p>
+        </a>
+        <a href="#collection" class="category-card">
+            <div class="category-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h3>Home Accents</h3>
+            <p>Wall sconces, hooks &amp; decor</p>
+        </a>
+    </div>
+</section>
+
+<!-- ===== Collection ===== -->
+<section id="collection" class="products-section section">
+    <div class="section-header">
+        <h2 class="section-title">» The Collection</h2>
+        <p class="section-subtitle">Hand-Forged in Fujian. Shipped from the US.</p>
+    </div>
+
+    <div class="product-search">
+        <input type="text" class="search-input" placeholder="Search collection...">
+        <div class="filter-tags">
+            <button class="filter-tag active" data-filter="all">All</button>
+            <button class="filter-tag" data-filter="Verdigris Copper">Copper</button>
+            <button class="filter-tag" data-filter="Embossed Relief">Embossed</button>
+            <button class="filter-tag" data-filter="Textured Ceramic">Ceramic</button>
+        </div>
+    </div>
+    <div class="product-grid">
+        <div class="product-card featured">
+            <div class="product-img"><img src="images/products/classic-urn.jpg" alt="Classic Urn Vase"></div>
+            <div class="product-info">
+                <span class="product-category">Verdigris Copper</span>
+                <h3>Classic Urn Vase — 4 Patina Finishes</h3>
+                <div class="product-meta"><span class="product-rating">★ 4.9</span><span>1,280 sold</span></div>
+                <span class="product-price">$48.99</span>
+                <button class="add-to-cart-btn" data-id="classic-urn" data-name="Classic Urn Vase — 4 Patina Finishes" data-price="48.99" data-img="images/products/classic-urn.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><img src="images/products/turquoise-patina.jpg" alt="Turquoise Patina Vase"></div>
+            <div class="product-info">
+                <span class="product-category">Verdigris Copper</span>
+                <h3>Turquoise Patina Vase — Dining</h3>
+                <div class="product-meta"><span class="product-rating">★ 4.8</span><span>860 sold</span></div>
+                <span class="product-price">$54.99</span>
+                <button class="add-to-cart-btn" data-id="turquoise-patina" data-name="Turquoise Patina Vase — Dining" data-price="54.99" data-img="images/products/turquoise-patina.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><img src="images/products/copper-rose.jpg" alt="Copper-Rose Vase"></div>
+            <div class="product-info">
+                <span class="product-category">Verdigris Copper</span>
+                <h3>Copper-Rose Vase — Statement</h3>
+                <div class="product-meta"><span class="product-rating">★ 5.0</span><span>620 sold</span></div>
+                <span class="product-price">$62.99</span>
+                <button class="add-to-cart-btn" data-id="copper-rose" data-name="Copper-Rose Vase — Statement" data-price="62.99" data-img="images/products/copper-rose.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><img src="images/products/floral-heavy.jpg" alt="Floral Relief Floor Vase"></div>
+            <div class="product-info">
+                <span class="product-category">Embossed Relief</span>
+                <h3>Floral Relief Floor Vase — Heavy Patina</h3>
+                <div class="product-meta"><span class="product-rating">★ 4.9</span><span>420 sold</span></div>
+                <span class="product-price">$128.99</span>
+                <button class="add-to-cart-btn" data-id="floral-heavy" data-name="Floral Relief Floor Vase — Heavy Patina" data-price="128.99" data-img="images/products/floral-heavy.jpg">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><img src="images/products/floral-light.png" alt="Floral Relief Floor Vase"></div>
+            <div class="product-info">
+                <span class="product-category">Embossed Relief</span>
+                <h3>Floral Relief Floor Vase — Light Patina</h3>
+                <div class="product-meta"><span class="product-rating">★ 4.8</span><span>380 sold</span></div>
+                <span class="product-price">$128.99</span>
+                <button class="add-to-cart-btn" data-id="floral-light" data-name="Floral Relief Floor Vase — Light Patina" data-price="128.99" data-img="images/products/floral-light.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><img src="images/products/grand-peony.png" alt="Grand Peony Urn"></div>
+            <div class="product-info">
+                <span class="product-category">Embossed Relief</span>
+                <h3>Grand Peony Urn — Collector's Edition</h3>
+                <div class="product-meta"><span class="product-rating">★ 5.0</span><span>210 sold</span></div>
+                <span class="product-price">$189.99</span>
+                <button class="add-to-cart-btn" data-id="grand-peony" data-name="Grand Peony Urn — Collector's Edition" data-price="189.99" data-img="images/products/grand-peony.png">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><img src="images/products/terracotta-sand.webp" alt="Ribbed Terracotta Vase Set"></div>
+            <div class="product-info">
+                <span class="product-category">Textured Ceramic</span>
+                <h3>Ribbed Terracotta Vase Set — Sand</h3>
+                <div class="product-meta"><span class="product-rating">★ 4.7</span><span>950 sold</span></div>
+                <span class="product-price">$44.99</span>
+                <button class="add-to-cart-btn" data-id="terracotta-sand" data-name="Ribbed Terracotta Vase Set — Sand" data-price="44.99" data-img="images/products/terracotta-sand.webp">Add to Cart</button>
+            </div>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><img src="images/products/stone-charcoal.png" alt="Ribbed Stone Vase Set"></div>
+            <div class="product-info">
+                <span class="product-category">Textured Ceramic</span>
+                <h3>Ribbed Stone Vase Set — Charcoal</h3>
+                <div class="product-meta"><span class="product-rating">★ 4.8</span><span>870 sold</span></div>
+                <span class="product-price">$44.99</span>
+                <button class="add-to-cart-btn" data-id="stone-charcoal" data-name="Ribbed Stone Vase Set — Charcoal" data-price="44.99" data-img="images/products/stone-charcoal.png">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== About / Terminal Card ===== -->
+<section id="story" class="terminal-section section">
+    <div class="terminal-card">
+        <div class="terminal-bar">
+            <span class="terminal-dot red"></span>
+            <span class="terminal-dot yellow"></span>
+            <span class="terminal-dot green"></span>
+            <span class="terminal-title">mossrust@workshop:~</span>
+        </div>
+        <div class="terminal-body">
+                        <p><span class="prompt">$</span> cat ABOUT.txt</p>
+            <p class="terminal-text">Founded in 1993 as a bamboo craft workshop, MOSSRUST has been dedicated to artisanal excellence for over three decades. In the early 1990s, we made a decisive pivot to iron — drawn to its durability, its weight, and the way time treats it with such beautiful cruelty.</p>
+            <p class="terminal-text">In 2010, we formally established our import/export trading company, expanding our product line to encompass iron, wood, rattan, and bamboo home goods. Today, our core offering — the hand-forged vintage iron planter — is the culmination of twenty years of process refinement.</p>
+            <p class="terminal-text"><span class="prompt">$</span> cat CRAFT.txt</p>
+            <p class="terminal-text">Each planter undergoes over ten manual processes: cutting, welding, grinding, chemical aging, and hand-applied finishing. We specialize in the copper-green verdigris patina — achieved through proprietary chemical treatment and meticulous hand-brushing techniques. The result: layered depth, a coarse-yet-warm tactile surface, and a finish that suggests an artifact rescued from an old estate garden rather than something newly made.</p>
+            <p class="terminal-text">No two pieces age identically. That is the point.</p>
+            <p class="terminal-text"><span class="prompt">$</span> cat REACH.txt</p>
+            <p class="terminal-text">MOSSRUST products ship to Europe, North America, and Australia. Our planters and home accents are found in gardens, patio spaces, balconies, commercial interiors, and styled living rooms — anywhere the language of rust, patina, and hand-work speaks louder than the hum of a factory line.</p>
+            <p><span class="prompt">$</span> <span class="terminal-cursor">▊</span></p>
+        </div>
+    </div>
+</section>
+
+
+<!-- ===== FAQ ===== -->
+<section class="faq-section section">
+    <div class="section-header">
+        <h2 class="section-title">Shipping &amp; FAQ</h2>
+        <div class="decorative-divider"></div>
+    </div>
+    <div class="faq-grid">
+        <div class="faq-card">
+            <h3>🚚 Free Shipping</h3>
+            <p>Free US shipping on all orders over $75. Orders typically ship within 1-2 business days from our US warehouse.</p>
+        </div>
+        <div class="faq-card">
+            <h3>📦 Easy Returns</h3>
+            <p>Not satisfied? Return any item within 30 days for a full refund. We stand behind every piece we make.</p>
+        </div>
+        <div class="faq-card">
+            <h3>🛠 Hand-Forged Care</h3>
+            <p>Each piece is sealed for indoor/outdoor use. Wipe with a dry cloth. The patina naturally evolves over time.</p>
+        </div>
+        <div class="faq-card">
+            <h3>🌎 US-Based Support</h3>
+            <p>Questions? Email us at hello@mossrust.com. We respond within 24 hours, Monday through Saturday.</p>
+        </div>
+    </div>
+</section>
+<!-- ===== Social Media ===== -->
+<section class="social-section section">
+    <div class="section-header">
+        <h2 class="section-title">Follow Our Journey</h2>
+        <div class="decorative-divider"></div>
+        <p class="section-subtitle">Find us on your favorite platform</p>
+    </div>
+    <div class="social-links">
+        <a href="https://www.instagram.com/mossrust" target="_blank" rel="noopener" class="social-link instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Instagram
+        </a>
+        <a href="https://www.pinterest.com/mossrust" target="_blank" rel="noopener" class="social-link pinterest">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+            Pinterest
+        </a>
+        <a href="https://www.facebook.com/mossrust" target="_blank" rel="noopener" class="social-link facebook">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Facebook
+        </a>
+        <a href="https://www.tiktok.com/@mossrust" target="_blank" rel="noopener" class="social-link tiktok">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            TikTok
+        </a>
+    </div>
+</section>
+
+<!-- ===== Visitor Counter ===== -->
+<div class="visitor-counter">
+    <span>You are visitor #</span>
+    <span class="counter-digits" id="visitorCount">001337</span>
+</div>
+
+
+<!-- ===== Newsletter ===== -->
+<section class="newsletter-section">
+    <div class="newsletter-inner">
+        <h3>Join the Workshop Circle</h3>
+        <p>New collections, artisan stories, and exclusive offers — straight to your inbox.</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+<!-- ===== Payment Methods ===== -->
+<section class="payment-section">
+    <h3>All Major US Payment Methods Accepted</h3>
+    <div class="payment-icons">
+        <div class="payment-icon" title="Visa">
+            <svg width="48" height="30" viewBox="0 0 48 30"><rect width="48" height="30" rx="3" fill="#1A1F71"/><path d="M19.5 9.5l-2.5 11h-3l-1.8-8.8c-.1-.5-.3-.7-.6-.8l-2.6-1v-.4h4.2c.5 0 1 .3 1.1 1l1 5.2 2.5-6.2h3.2zm8.2 7.4c0-2.9-4-3.1-4-4.4 0-.4.4-.8 1.2-.9 1-.1 1.8 0 2.6.3l.5-2.1c-.7-.3-1.5-.4-2.4-.4-2.5 0-4.3 1.3-4.3 3.2 0 1.4 1.3 2.2 2.2 2.7 1 .5 1.3.8 1.3 1.2 0 .7-.8 1-1.5 1-1.2 0-1.9-.2-2.5-.5l-.4 2.1c.7.3 2 .6 3.3.6 2.8 0 4.6-1.3 4.6-3.4zm6.5 3.6h2.3l-2-11h-2.6c-.5 0-1 .3-1.2.8l-3.5 8.5v.2c.1.1.3.1.5.1h2.5l.5-1.4h3.1l.3 1.3.1.2c0 .1.1.2.2.3h.3zm-2.8-4.2l1.3-3.5.7 3.5h-2zm-12.6 3.6l1.9-10.8h-3l-1.9 10.8h3z" fill="white"/></svg>
+        </div>
+        <div class="payment-icon" title="Mastercard">
+            <svg width="48" height="30" viewBox="0 0 48 30"><rect width="48" height="30" rx="3" fill="#252525"/><circle cx="18" cy="15" r="9" fill="#EB001B"/><circle cx="30" cy="15" r="9" fill="#F79E1B" opacity=".8" mask="url(#mc)"/></svg>
+        </div>
+        <div class="payment-icon" title="American Express">
+            <svg width="48" height="30" viewBox="0 0 48 30"><rect width="48" height="30" rx="3" fill="#2E77BC"/><path d="M10 10h28v10H10z" fill="white"/></svg>
+        </div>
+        <div class="payment-icon" title="PayPal">
+            <svg width="48" height="30" viewBox="0 0 48 30"><rect width="48" height="30" rx="3" fill="#009CDE"/><text x="8" y="21" font-family="Arial" font-weight="bold" font-size="14" fill="white">PayPal</text></svg>
+        </div>
+        <div class="payment-icon" title="Stripe">
+            <svg width="48" height="30" viewBox="0 0 48 30"><rect width="48" height="30" rx="3" fill="#635BFF"/><text x="8" y="21" font-family="Arial" font-weight="bold" font-size="14" fill="white">Stripe</text></svg>
+        </div>
+        <div class="payment-icon" title="Apple Pay">
+            <svg width="48" height="30" viewBox="0 0 48 30"><rect width="48" height="30" rx="3" fill="black"/><text x="6" y="21" font-family="Arial" font-weight="bold" font-size="13" fill="white">&#63743;Pay</text></svg>
+        </div>
+        <div class="payment-icon" title="Venmo">
+            <svg width="48" height="30" viewBox="0 0 48 30"><rect width="48" height="30" rx="3" fill="#008CFF"/><text x="6" y="21" font-family="Arial" font-weight="bold" font-size="14" fill="white">Venmo</text></svg>
+        </div>
+        <div class="payment-icon" title="Google Pay">
+            <svg width="48" height="30" viewBox="0 0 48 30"><rect width="48" height="30" rx="3" fill="white" stroke="#ddd" stroke-width="1"/><text x="4" y="21" font-family="Arial" font-weight="bold" font-size="12" fill="#4285F4">G Pay</text></svg>
+        </div>
+    </div>
+    <p class="payment-note">Secure checkout powered by Stripe &amp; PayPal</p>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+    <p>© 2026 MOSSRUST LLC. All rights reserved.</p>
+    <p class="footer-tag">⚒ Crafted with fire, hammer, and patience. ⚒</p>
+    <p class="footer-nostalgia">Best viewed in Netscape Navigator 4.0+ at 800×600</p>
+</footer>
+
+<button class="back-to-top" title="Back to Top">↑</button>
+<!-- ===== Lightbox ===== -->
+<div class="lightbox-overlay" id="lightbox">
+    <span class="lightbox-close">&times;</span>
+    <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="Product View">
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+    </div>
+</div>
+
+
+
+<script src="js/main.js"></script>
+<script>
+(function() {
+    var lightbox = document.getElementById("lightbox");
+    var lightboxImg = document.getElementById("lightbox-img");
+    var lightboxCaption = document.getElementById("lightbox-caption");
+    if (!lightbox || !lightboxImg) return;
+
+    // Bind click to all product images
+    var productImgs = document.querySelectorAll(".product-img");
+    for (var i = 0; i < productImgs.length; i++) {
+        productImgs[i].style.cursor = "zoom-in";
+        productImgs[i].addEventListener("click", function() {
+            var img = this.querySelector("img");
+            if (img && img.src) {
+                lightboxImg.src = img.src;
+                if (lightboxCaption) {
+                    var card = this.closest(".product-card");
+                    var h3 = card ? card.querySelector("h3") : null;
+                    lightboxCaption.textContent = h3 ? h3.textContent : "";
+                }
+                lightbox.classList.add("active");
+                document.body.style.overflow = "hidden";
+            }
+        });
+    }
+
+    // Close on overlay click or close button
+    lightbox.addEventListener("click", function(e) {
+        if (e.target === lightbox || e.target.classList.contains("lightbox-close")) {
+            lightbox.classList.remove("active");
+            document.body.style.overflow = "";
+        }
+    });
+
+    // Close on Escape
+    document.addEventListener("keydown", function(e) {
+        if (e.key === "Escape" && lightbox.classList.contains("active")) {
+            lightbox.classList.remove("active");
+            document.body.style.overflow = "";
+        }
+    });
+})();
+</script>
+</body>
+</html>
